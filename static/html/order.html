@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset3.0.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <script src="../js/template-web.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/base_jq.js"></script>
+    <script src="../js/order.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <img src="../img/back.png" alt="" class="back">
+            <div class="search">
+                <img src="../img/de-search.png" alt="">
+                <input type="text" placeholder="SUPERTOFU">
+            </div>
+            <img src="../img/other.png" alt="">
+        </div>
+
+        <div class="header">
+            <ul>
+                <li class="active">全部</li>
+                <li>待付款</li>
+                <li>代发货</li>
+                <li>代收获</li>
+                <li>待评价</li>
+            </ul>
+        </div>
+        <div class="swiper">
+            <div class="content con-dis">
+                <div class="inner"></div>
+            </div>
+            <div class="content">
+                <div class="inner"></div>
+            </div>
+            <div class="content">
+                <div class="inner"></div>
+            </div>
+            <div class="content">
+                <div class="inner"></div>
+            </div>
+            <div class="content">
+                <div class="inner"></div>
+            </div>
+        </div>
+        <div class="alert">已成功加入购物车</div>
+    </div>
+</body>
+
+<script type="text/html" id="tpl-user">
+    {{if $data.length == 0}}
+        <div class="tit">
+            <img src="../img/dingdan.png" alt="">
+            <h1>您还没有相关的订单</h1>
+            <p>可以去看看有哪些想买的</p>
+        </div>
+    {{else if $data.length !== 0}}
+        {{each}}
+            <div class="item">
+                <div class="item-top">
+                    <div class="shop-name">
+                        <img src="../img/dianpu-000.png" alt="">
+                        <h2>SUPERTOFU</h2>
+                        <img src="../img/right-ccc.png" alt="">
+                    </div>
+                    <span>
+                        {{if $value.status == 1}}待付款
+                        {{else if $value.status == 2}}代发货
+                        {{else if $value.status == 3}}代收获
+                        {{else if $value.status == 4}}代评价
+                        {{/if}}
+                    </span>
+                </div>
+                <div class="item-con">
+                    <img src="{{$value.img}}" alt="">
+                    <div class="information">
+                        <div class="name">
+                            <h3 class="title">{{$value.title}}</h3>
+                            <p>￥<span>{{$value.price}}</span></p>
+                        </div>
+                        <div class="specification">
+                            <p class="color">{{$value.color}}</p>
+                            <p>x{{$value.num}}</p>
+                        </div>
+                        <span>7天无理由退换</span>
+                    </div>
+                </div>
+                {{if $value.status == 1}}
+                    <div class="payment">
+                        应付款<span>￥</span>{{$value.price * $value.num}}<span></span>
+                    </div>
+                {{/if}}
+                <div class="btn">
+                    <a href="javascript:;" class="del" rel="{{$value.id}}">删除订单</a>
+                    <a href="javascript:;" class="add">加入购物车</a>
+                </div>
+            </div>
+        {{/each}}
+    {{/if}}
+</script>
+
+</html>

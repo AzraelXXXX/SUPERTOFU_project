@@ -1,0 +1,114 @@
+.container {
+    // 内容样式
+    .con {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .images {
+            margin-bottom: .24rem;
+            text-align: center;
+        }
+        img {
+            width: 7.14rem;
+        }
+        .coupons {
+            width: 100%;
+            height: 1.8rem;
+            background-color: #fff;
+            .coupons-bg {
+                display: flex;
+                justify-content: space-between;
+                margin: .13rem .18rem 0;
+                width: 7.14rem;
+                height: 1.64rem;
+                color: #FF1616;
+                font-size: .32rem;
+                background: url(../img/coupons.png) no-repeat 0 0 / 7.14rem 1.64rem;
+                .coupons-left {
+                    display: flex;
+                    .cou-price {
+                        display: flex;
+                        align-items: center;
+                        margin-right: .14rem;
+                        span:first-child {
+                            margin-top: .38rem;
+                        }
+                        span:last-child {
+                            font-size: .9rem;
+                            font-weight: 600;
+                        }
+                    }
+                    .cou-con {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        span:last-child {
+                            text-align: left;
+                            margin-top: .14rem;
+                            font-size: .28rem;
+                        }
+                    }
+                }
+                .coupons-right {
+                    display: flex;
+                    align-items: center;
+                    .cou-btn {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: .24rem;
+                        width: 1.96rem;
+                        height: 0.68rem;
+                        background-color: #FF1616;
+                        border-radius: .34rem;
+                        img {
+                            width: 1.23rem;
+                            height: .33rem;
+                        }
+                    }
+                }
+            }
+        }
+        .con-all {
+            border-radius: .2rem;
+            overflow: hidden;
+        }
+        .banner {
+            width: 7.14rem;
+        }
+    }
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.banner .swiper-pagination-bullet {
+    width: 0.12rem;
+    height: 0.12rem;
+    opacity: 1;
+    background-color: rgba(255,255,255,.5) !important;
+}
+.banner .swiper-pagination-bullet-active {
+    background-color: #FF5000 !important;
+}

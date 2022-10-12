@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="../css/reset3.0.css">
+    <link rel="stylesheet" href="../css/details.css">
+    <link rel="stylesheet" href="../swiper-3.4.2/dist/css/swiper.min.css">
+    <script src="../swiper-3.4.2/dist/js/swiper.min.js"></script>
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/base_ax.js"></script>
+    <script src="../js/details.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="back">
+                <img src="../img/back.png" alt="">
+                <span></span>
+                <img src="../img/other.png" alt="">
+            </div>
+            <div class="search">
+                <img src="../img/de-search.png" alt="">
+                <input type="text" placeholder="背心">
+            </div>
+            <div class="shop-car">
+                <img src="../img/shop-car.png" alt="">
+            </div>
+        </div>
+        <div class="nav">
+            <div class="active"><span>宝贝</span></div>
+            <div><span>评价</span></div>
+            <div><span>详情</span></div>
+        </div>
+
+        <!-- 轮播 -->
+        <div class="banner scroll">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="" alt=""></div>
+                    <div class="swiper-slide"><img src="" alt=""></div>
+                    <div class="swiper-slide"><img src="" alt=""></div>
+                    <div class="swiper-slide"><img src="" alt=""></div>
+                    <div class="swiper-slide"><img src="" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- 99划算节价格 -->
+        <!-- <div class="effective">
+            <img src="../img/99.png" alt="">
+        </div> -->
+
+        <!-- 商品内容 -->
+        <div class="content">
+            <div class="inner">
+                <!-- 商品介绍 -->
+                <div class="introduce all">
+                    <div class="coupons">
+                        <span>跨店每200减20</span>
+                        <span>淘金币抵3%</span>
+                    </div>
+                    <div class="price">
+                        <span>¥</span>
+                        <span></span>
+                    </div>
+                    <div class="describe">
+                        <div>
+                            <img src="../img/ifashion.webp" alt="">
+                            <span>追流行趋势</span>
+                            <span>买风格新品</span>
+                        </div>
+                        <span>月销<span></span></span>
+                    </div>
+                    <div class="title">
+                        <h2></h2>
+                    </div>
+                    <div class="receive">
+                        <span>领券</span>
+                        <img src="../img/right-fff.png" alt="">
+                    </div>
+                </div>
+                <!-- 参数 -->
+                <div class="parameter all">
+                    <div class="para-item">
+                        <div>
+                            <span>选择</span>
+                            <p>颜色/尺码</p>
+                        </div>
+                        <i></i>
+                    </div>
+                    <div class="select">
+                        <span>共<span class="sel_num"></span>种颜色可选</span>
+                    </div>
+                    <div class="para-item">
+                        <div>
+                            <span>发货</span>
+                            <p>广东东莞<em></em>快递: 18.00元</p>
+                        </div>
+                        <i></i>
+                    </div>
+                    <div class="para-item">
+                        <div>
+                            <span>保障</span>
+                            <p>七天无理由· 运费险</p>
+                        </div>
+                        <i></i>
+                    </div>
+                    <div class="para-item">
+                        <div>
+                            <span>参数</span>
+                            <p>品牌 尺码...</p>
+                        </div>
+                        <i></i>
+                    </div>
+                </div>
+                <!-- 评价 -->
+                <div class="evaluate all scroll">
+                    <!-- 宝贝评价 -->
+                    <div class="goods-eva">
+                        <div class="eva-tit">
+                            <h2>宝贝评价(200+)</h2>
+                            <div>
+                                <span>查看全部</span>
+                                <img src="../img/right-f40.png" alt="">
+                            </div>
+                        </div>
+                        <div class="buy-eva">
+                            <div class="eva-top">
+                                <img src="../img/head-pic-1.jpg" alt="">
+                                <div>
+                                    <span>丶**开</span>
+                                    <span>2个月前</span>
+                                </div>
+                            </div>
+                            <p>太绝了最帅格子衫一点也不程序员 面料比较厚</p>
+                        </div>
+                        <div class="buy-eva">
+                            <div class="eva-top">
+                                <img src="../img/head-pic-2.jpg" alt="">
+                                <div>
+                                    <span>t**1</span>
+                                    <span>2个月前</span>
+                                </div>
+                            </div>
+                            <p>尺码感受：刚刚好的oversize 古巴领搭配起来很帅</p>
+                        </div>
+                    </div>
+                    <!-- 卖家秀 -->
+                    <div class="buyer">
+                        <div class="eva-top">
+                            <div class="eva-tit">
+                                <h2>买家秀(4)</h2>
+                                <div>
+                                    <span>查看全部</span>
+                                    <img src="../img/right-f40.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy-pic">
+                            <img src="../img/maijiaxiu-1.jpg" alt="">
+                            <img src="../img/maijiaxiu-2.jpg" alt="">
+                            <img src="../img/maijiaxiu-3.jpg" alt="">
+                            <img src="../img/maijiaxiu-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- 问大家 -->
+                    <div class="question">
+                        <div class="eva-top">
+                            <div class="eva-tit">
+                                <h2>问大家(16)</h2>
+                                <div>
+                                    <span>查看全部</span>
+                                    <img src="../img/right-f40.png" alt="">
+                                </div>
+                            </div>
+                            <div class="que-item">
+                                <div>
+                                    <i></i>
+                                    <p>红色还是黄色好看</p>
+                                </div>
+                                <span>5个回答</span>
+                            </div>
+                            <div class="que-item">
+                                <div>
+                                    <i></i>
+                                    <p>170 130 穿多大</p>
+                                </div>
+                                <span>2个回答</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 店铺 -->
+                <div class="shop all">
+                    <div class="shop-top">
+                        <div class="left">
+                            <img src="../img/shop.png" alt="">
+                            <div>
+                                <h2>SUPERTOFU</h2>
+                                <img src="../img/huangguan.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <p>宝贝描述4.9<span>高</span></p>
+                            <p>卖家服务4.9<span>高</span></p>
+                            <p>物流服务4.9<span>高</span></p>
+                        </div>
+                    </div>
+                    <div class="shop-bottom">
+                        <div class="btn">进店逛逛</div>
+                        <div class="btn">全部宝贝</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 分割 -->
+        <div class="mid scroll">
+            <hr>
+            <div>
+                <img src="../img/pic.png" alt="">
+                <span>详情</span>
+            </div>
+            <hr>
+        </div>
+
+        <!-- 详情 -->
+        <div class="information">
+            <img src="../img/de-header.png" alt="">
+        </div>
+
+        <!-- 价格说明 -->
+        <div class="explain">
+            <h2>价格说明</h2>
+            <ul>
+                <li>
+                    <h5>划线价格</h5>
+                    <p>商品的专柜价、吊牌价、正品零售价、厂商指导价或该商品的曾经展示过的销售价等，<span>并非原价</span>，仅供参考。</p>
+                </li>
+                <li>
+                    <h5>未划线价格</h5>
+                    <p>商品的<span>实时标价</span>，不因表述的差异改变性质。具体成交价格根据商品参加活动,或会员使用优惠券、积分等发生变化，最终以订单结算页价格为准。</p>
+                </li>
+                <li>
+                    <p>商家详情页(含主图)以图片或文字形式标注的一口价、促销价、优惠价等价格可能是在使用优惠券、满减或特定优惠活动和时段等情形下的价格，具体请以结算页面的标价、优惠条件或活动规则为准。</p>
+                </li>
+                <li>
+                    <p>此说明仅当出现价格比较时有效，具体请参见《淘宝价格发布规范》。若商家单独对划线价格进行说明的，以商家的表述为准。</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+            <div class="fot-nav">
+                <img src="../img/dianpu.png" alt="">
+                <span>店铺</span>
+            </div>
+            <div class="fot-nav">
+                <img src="../img/kefu.png" alt="">
+                <span>客服</span>
+            </div>
+            <div class="fot-nav collection">
+                <img src="../img/shoucang.png" alt="">
+                <span>收藏</span>
+            </div>
+            <div class="fot-btn">
+                <div class="btn-left">
+                    加入购物车
+                </div>
+                <div class="btn-right">
+                    立即购买
+                </div>
+            </div>
+        </div>
+
+        <div class="alert"></div>
+        <div class="collect-alert"></div>
+    </div>
+</body>
+
+</html>

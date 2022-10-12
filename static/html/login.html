@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/reset3.0.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mask">
+            <div class="warning">
+                <div class="title"></div>
+                <div class="clo_btn">确定</div>
+            </div>
+        </div>
+
+        <div class="mask1">
+            <div class="warning">
+                <div class="title">服务协议及隐私保护</div>
+                <div class="con">
+                    为了更好地保障您的合法权益，请您阅读并同意以下协议<a href="javascript:;">《淘宝平台服务协议》</a>
+                    <a href="javascript:;">《隐私权政策》</a><a href="javascript:;">《支付宝及客户端服务协议》</a>
+                    ，未注册手机号将自动为您创建账号。
+                </div>
+                <div class="mask_btn">
+                    <button class="no">不同意</button>
+                    <button class="yes">同意</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 登录头部 -->
+        <div class="top">
+            <h1>淘宝账号登录</h1>
+        </div>
+        <!-- logo部分 -->
+        <div class="logo">
+            <img src="../img/taobao_logo.png" alt="">
+        </div>
+        <!-- form手机号登录部分 -->
+        <div class="login-form">
+            <form action="">
+                <div class="tel">
+                    <select name="" id="">
+                        <option value="">+86 中国大陆</option>
+                        <option value="">+852 中国香港</option>
+                    </select>
+                    <input type="text" placeholder="请输入手机号" class="phone">
+                    <i></i>
+                </div>
+                <div class="psw">
+                    <input type="text" placeholder="请输入验证码" class="code" maxlength="4">
+                    <i></i>
+                    <a href="javascript:;">获取验证码</a>
+                </div>
+                <div class="switch">
+                    <a href="javascript:;">账号密码登录</a>
+                </div>
+                <div class="btn">
+                    <button class="btn1" type="button">登录</button>
+                </div>
+                <div class="agreement">
+                    <em></em>
+                    <p>已阅读并同意以下协议<a href="#">淘宝平台服务协议</a>、<a href="#">隐私权政策</a>、<a href="#">法律声明</a>、<a
+                            href="#">支付宝及客户端服务协议</a>，未注册手机号将自动为您创建账号。</p>
+                </div>
+            </form>
+        </div>
+
+        <div class="login-form dn">
+            <form action="">
+                <div class="tel acnum">
+                    <input type="text" placeholder="手机号/邮箱/账号名" class="usernum">
+                    <i></i>
+                </div>
+                <div class="psw">
+                    <input type="password" placeholder="请输入登录密码" class="password">
+                    <i></i>
+                    <span class="eyes"></span>
+                </div>
+                <div class="switch">
+                    <a href="javascript:;">短信验证码登录</a>
+                </div>
+                <div class="btn">
+                    <button class="btn2" type="button">登录</button>
+                </div>
+                <div class="agreement">
+                    <em></em>
+                    <p>已阅读并同意以下协议<a href="#">淘宝平台服务协议</a>、<a href="#">隐私权政策</a>、<a href="#">法律声明</a>、<a
+                            href="#">支付宝及客户端服务协议</a>，未注册手机号将自动为您创建账号。</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

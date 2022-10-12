@@ -1,0 +1,215 @@
+body {
+    background-color: #f1f1f1;
+}
+.container {
+    width: 100%;
+    .top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: .82rem;
+        background-color: #f1f1f1;
+        >img {
+            width: 0.46rem;
+            height: 0.46rem;
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            width: 4.4rem;
+            height: .56rem;
+            background-color: #fff;
+            border-radius: .28rem;
+
+            img {
+                margin: 0 .2rem;
+                width: 0.28rem;
+                height: .28rem;
+            }
+
+            input {
+                padding-left: .2rem;
+                outline: none;
+                font-size: .24rem;
+                border: none;
+                border-left: 2px solid #a9a9a9;
+            }
+
+            input::placeholder {
+                color: #aeaeae;
+                font-size: .24rem;
+            }
+        }
+    }
+    .header {
+        position: fixed;
+        top: .82rem;
+        left: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            line-height: .82rem;
+            li {
+                font-size: .3rem;
+            }
+            .active {
+                color: #ff5000;
+                font-weight: 600;
+            }
+        }
+    }
+    .swiper {
+        margin-top: 1.64rem;
+    }
+    .content {
+        display: none;
+        height: 100%;
+        .inner {
+            padding-top: .18rem;
+            margin: 0 auto;
+            width: 7.28rem;
+            .item {
+                margin-bottom: .18rem;
+                padding: .26rem .26rem .2rem;
+                background-color: #fff;
+                border-radius: .2rem;
+                .item-top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: .32rem;
+                    .shop-name {
+                        display: flex;
+                        align-items: center;
+                        img:first-child {
+                            margin-right: .14rem;
+                            width: 0.42rem;
+                            height: 0.37rem;
+                        }
+                        h2 {
+                            margin-right: .1rem;
+                            font-size: .26rem;
+                        }
+                        img:last-child {
+                            width: 0.24rem;
+                            height: 0.24rem;
+                        }
+                    }
+                    span {
+                        color: #ff5000;
+                    }
+                }
+
+                .item-con {
+                    display: flex;
+                    img {
+                        margin-right: .26rem;
+                        width: 1.8rem;
+                        height: 1.8rem;
+                    }
+                    .information {
+                        flex: 1;
+                        >div {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            line-height: .44rem;
+                            font-size: .26rem;
+                        }
+                        .name {
+                            h3 {
+                                width: 3.76em;
+                                flex: 1;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                            p {
+                                font-size: .1rem;
+                                color: #000;
+                                span {
+                                    font-size: .28rem;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        .specification {
+                            color: #909090;
+                        }
+                        >span {
+                            padding: 0 .1rem;
+                            font-size: .18rem;
+                            color: #ff5000;
+                            border: .01rem solid #ff5000;
+                            border-radius: .04rem;
+                        }
+                    }
+                }
+                .payment {
+                    margin: .3rem 0 .4rem;
+                    color: #000;
+                    font-weight: 700;
+                    text-align: right;
+                    span {
+                        font-size: .1rem;
+                        font-weight: 500;
+                    }
+                }
+                .btn {
+                    display: flex;
+                    justify-content: flex-end;
+                    a {
+                        margin-left: .18rem;
+                        width: 1.7rem;
+                        height: .7rem;
+                        line-height: .66rem;
+                        text-align: center;
+                        color: #000;
+                        border: .02rem solid #c8c8c8;
+                        border-radius: .35rem;
+                    }
+                }
+            }
+        }
+        .tit {
+            padding-top: 4rem;
+            text-align: center;
+            color: #666;
+            img {
+                width: 1.4rem;
+            }
+            h1 {
+                line-height: .5rem;
+                font-size: .3rem;
+            }
+            p {
+                line-height: .5rem;
+                font-size: .24rem;
+            }
+        } 
+    }
+    .con-dis {
+        display: block;
+    }
+    .alert {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        display: none;
+        padding: 0 .5rem;
+        height: .8rem;
+        line-height: .8rem;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0,0,0,.8);
+        color: #fff;
+        border-radius: .1rem;
+        z-index: 999;
+    }
+}

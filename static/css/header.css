@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  background-color: #f2f1ef;
+}
+.container .inner {
+  margin: 0 auto;
+  width: 7.02rem;
+}
+.container .header {
+  width: 100%;
+  height: 1.97rem;
+  color: #fff;
+}
+.container .header .top {
+  padding-bottom: 0.04rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.container .header .top .header-tit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .header .top .header-tit .title {
+  display: flex;
+  align-items: center;
+}
+.container .header .top .header-tit .title h1 {
+  font-size: 0.34rem;
+  font-weight: 400;
+}
+.container .header .top .header-tit .title img {
+  margin-left: 0.08rem;
+  width: 0.24rem;
+  height: 0.24rem;
+}
+.container .header .top .header-tit .follow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.24rem;
+  height: 0.58rem;
+  background: url(../img/follow-bg.webp) no-repeat 0 0 / contain;
+}
+.container .header .top .header-tit .follow img {
+  margin-right: 0.09rem;
+  width: 0.27rem;
+}
+.container .header .top .ifashion {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.container .header .top .ifashion img {
+  margin-right: 0.12rem;
+  height: 0.24rem;
+}
+.container .header .top .ifashion img:nth-child(1) {
+  width: 0.94rem;
+}
+.container .header .top .ifashion img:nth-child(2) {
+  width: 0.24rem;
+}
+.container .header .top .ifashion span {
+  font-size: 0.2rem;
+}
+.container .header .nav {
+  display: flex;
+  align-items: center;
+  padding-left: 0.24rem;
+  width: 100%;
+  height: 1.08rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+.container .header .nav .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.4rem;
+  width: 1.36rem;
+  height: 0.6rem;
+  background-color: hsla(0, 0%, 93.3%, 0.4);
+  border-radius: 0.3rem;
+}
+.container .header .nav .search img {
+  margin-right: 0.1rem;
+  width: 0.4rem;
+}
+.container .header .nav .search span {
+  font-size: 0.3rem;
+}
+.container .header .nav .nav-list {
+  flex: 1;
+  overflow: scroll;
+}
+.container .header .nav .nav-list ul {
+  width: 120%;
+  display: flex;
+}
+.container .header .nav .nav-list ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0.48rem;
+  font-size: 0.3rem;
+}
+.container .header .nav .nav-list ul li span {
+  margin-top: 0.05rem;
+  width: 0.56rem;
+  height: 0.04rem;
+  border-radius: 0.02rem;
+  background-color: #fff;
+}
+.container .header .nav .nav-list::-webkit-scrollbar {
+  display: none;
+}

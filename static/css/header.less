@@ -1,0 +1,129 @@
+.container {
+    width: 100%;
+    background-color: rgb(242, 241, 239);
+    .inner {
+        margin: 0 auto;
+        width: 7.02rem;
+    }
+    // 头部
+    .header {
+        width: 100%;
+        height: 1.97rem;
+        color: #fff;
+        // 头部上部分
+        .top {
+            padding-bottom: .04rem;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .6);
+            
+                .header-tit {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    // 店铺名称
+                    .title {
+                        display: flex;
+                        align-items: center;
+
+                        h1 {
+                            font-size: .34rem;
+                            font-weight: 400;
+                        }
+
+                        img {
+                            margin-left: .08rem;
+                            width: .24rem;
+                            height: .24rem;
+                        }
+                    }
+                    // 关注
+                    .follow {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 1.24rem;
+                        height: 0.58rem;
+                        background: url(../img/follow-bg.webp) no-repeat 0 0 / contain;
+
+                        img {
+                            margin-right: .09rem;
+                            width: 0.27rem;
+                        }
+                    }
+                }
+                // 店铺等级和粉丝数
+                .ifashion {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    img {
+                        margin-right: .12rem;
+                        height: .24rem;
+                    }
+                    img:nth-child(1) {
+                        width: .94rem;
+                    }
+                    img:nth-child(2) {
+                        width: .24rem;
+                    }
+                    span {
+                        font-size: .2rem;
+                    }
+                }
+            
+        }
+        // 导航部分
+        .nav {
+            display: flex;
+            align-items: center;
+            padding-left: .24rem;
+            width: 100%;
+            height: 1.08rem;
+            background-color: rgba(0,0,0,.6);
+            z-index: 9999;
+            .search {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: .4rem;
+                width: 1.36rem;
+                height: .6rem;
+                background-color: hsla(0,0%,93.3%,.4);
+                border-radius: .3rem;
+                img {
+                    margin-right: .1rem;
+                    width: 0.4rem;
+                }
+                span {
+                    font-size: .3rem;
+                }
+            }
+            .nav-list {
+                flex: 1;
+                overflow: scroll;
+                ul {
+                    width: 120%;
+                    display: flex;
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-right: .48rem;
+                        font-size: .3rem;
+                        span {
+                            margin-top: .05rem;
+                            width: .56rem;
+                            height: .04rem;
+                            border-radius: .02rem;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+            .nav-list::-webkit-scrollbar{
+                display:none;
+            }
+        }
+    }
+}

@@ -1,0 +1,209 @@
+body {
+  background-color: #f1f1f1;
+}
+.container {
+  width: 100%;
+}
+.container .top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 0.82rem;
+  background-color: #f1f1f1;
+}
+.container .top > img {
+  width: 0.46rem;
+  height: 0.46rem;
+}
+.container .top .search {
+  display: flex;
+  align-items: center;
+  width: 4.4rem;
+  height: 0.56rem;
+  background-color: #fff;
+  border-radius: 0.28rem;
+}
+.container .top .search img {
+  margin: 0 0.2rem;
+  width: 0.28rem;
+  height: 0.28rem;
+}
+.container .top .search input {
+  padding-left: 0.2rem;
+  outline: none;
+  font-size: 0.24rem;
+  border: none;
+  border-left: 2px solid #a9a9a9;
+}
+.container .top .search input::placeholder {
+  color: #aeaeae;
+  font-size: 0.24rem;
+}
+.container .header {
+  position: fixed;
+  top: 0.82rem;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.container .header ul {
+  display: flex;
+  justify-content: space-around;
+  line-height: 0.82rem;
+}
+.container .header ul li {
+  font-size: 0.3rem;
+}
+.container .header ul .active {
+  color: #ff5000;
+  font-weight: 600;
+}
+.container .swiper {
+  margin-top: 1.64rem;
+}
+.container .content {
+  display: none;
+  height: 100%;
+}
+.container .content .inner {
+  padding-top: 0.18rem;
+  margin: 0 auto;
+  width: 7.28rem;
+}
+.container .content .inner .item {
+  margin-bottom: 0.18rem;
+  padding: 0.26rem 0.26rem 0.2rem;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+.container .content .inner .item .item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.32rem;
+}
+.container .content .inner .item .item-top .shop-name {
+  display: flex;
+  align-items: center;
+}
+.container .content .inner .item .item-top .shop-name img:first-child {
+  margin-right: 0.14rem;
+  width: 0.42rem;
+  height: 0.37rem;
+}
+.container .content .inner .item .item-top .shop-name h2 {
+  margin-right: 0.1rem;
+  font-size: 0.26rem;
+}
+.container .content .inner .item .item-top .shop-name img:last-child {
+  width: 0.24rem;
+  height: 0.24rem;
+}
+.container .content .inner .item .item-top span {
+  color: #ff5000;
+}
+.container .content .inner .item .item-con {
+  display: flex;
+}
+.container .content .inner .item .item-con img {
+  margin-right: 0.26rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.container .content .inner .item .item-con .information {
+  flex: 1;
+}
+.container .content .inner .item .item-con .information > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 0.44rem;
+  font-size: 0.26rem;
+}
+.container .content .inner .item .item-con .information .name h3 {
+  width: 3.76em;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .content .inner .item .item-con .information .name p {
+  font-size: 0.1rem;
+  color: #000;
+}
+.container .content .inner .item .item-con .information .name p span {
+  font-size: 0.28rem;
+  font-weight: 600;
+}
+.container .content .inner .item .item-con .information .specification {
+  color: #909090;
+}
+.container .content .inner .item .item-con .information > span {
+  padding: 0 0.1rem;
+  font-size: 0.18rem;
+  color: #ff5000;
+  border: 0.01rem solid #ff5000;
+  border-radius: 0.04rem;
+}
+.container .content .inner .item .payment {
+  margin: 0.3rem 0 0.4rem;
+  color: #000;
+  font-weight: 700;
+  text-align: right;
+}
+.container .content .inner .item .payment span {
+  font-size: 0.1rem;
+  font-weight: 500;
+}
+.container .content .inner .item .btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.container .content .inner .item .btn a {
+  margin-left: 0.18rem;
+  width: 1.7rem;
+  height: 0.7rem;
+  line-height: 0.66rem;
+  text-align: center;
+  color: #000;
+  border: 0.02rem solid #c8c8c8;
+  border-radius: 0.35rem;
+}
+.container .content .tit {
+  padding-top: 4rem;
+  text-align: center;
+  color: #666;
+}
+.container .content .tit img {
+  width: 1.4rem;
+}
+.container .content .tit h1 {
+  line-height: 0.5rem;
+  font-size: 0.3rem;
+}
+.container .content .tit p {
+  line-height: 0.5rem;
+  font-size: 0.24rem;
+}
+.container .con-dis {
+  display: block;
+}
+.container .alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
+  padding: 0 0.5rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 0.1rem;
+  z-index: 999;
+}

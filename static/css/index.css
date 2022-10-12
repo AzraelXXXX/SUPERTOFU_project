@@ -1,0 +1,110 @@
+.container .con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container .con .images {
+  margin-bottom: 0.24rem;
+  text-align: center;
+}
+.container .con img {
+  width: 7.14rem;
+}
+.container .con .coupons {
+  width: 100%;
+  height: 1.8rem;
+  background-color: #fff;
+}
+.container .con .coupons .coupons-bg {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.13rem 0.18rem 0;
+  width: 7.14rem;
+  height: 1.64rem;
+  color: #FF1616;
+  font-size: 0.32rem;
+  background: url(../img/coupons.png) no-repeat 0 0 / 7.14rem 1.64rem;
+}
+.container .con .coupons .coupons-bg .coupons-left {
+  display: flex;
+}
+.container .con .coupons .coupons-bg .coupons-left .cou-price {
+  display: flex;
+  align-items: center;
+  margin-right: 0.14rem;
+}
+.container .con .coupons .coupons-bg .coupons-left .cou-price span:first-child {
+  margin-top: 0.38rem;
+}
+.container .con .coupons .coupons-bg .coupons-left .cou-price span:last-child {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.container .con .coupons .coupons-bg .coupons-left .cou-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .con .coupons .coupons-bg .coupons-left .cou-con span:last-child {
+  text-align: left;
+  margin-top: 0.14rem;
+  font-size: 0.28rem;
+}
+.container .con .coupons .coupons-bg .coupons-right {
+  display: flex;
+  align-items: center;
+}
+.container .con .coupons .coupons-bg .coupons-right .cou-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.24rem;
+  width: 1.96rem;
+  height: 0.68rem;
+  background-color: #FF1616;
+  border-radius: 0.34rem;
+}
+.container .con .coupons .coupons-bg .coupons-right .cou-btn img {
+  width: 1.23rem;
+  height: 0.33rem;
+}
+.container .con .con-all {
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+.container .con .banner {
+  width: 7.14rem;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.banner .swiper-pagination-bullet {
+  width: 0.12rem;
+  height: 0.12rem;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.banner .swiper-pagination-bullet-active {
+  background-color: #FF5000 !important;
+}

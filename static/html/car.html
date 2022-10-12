@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/reset3.0.css">
+    <link rel="stylesheet" href="../css/car.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/base_jq.js"></script>
+    <script src="../js/car.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- 顶部 -->
+        <div class="header">
+            <div class="inner">
+                <div class="top">
+                    <h1><i class="back"></i>购物车(<span class="tit_num"></span>)</h1>
+                    <span>管理</span>
+                </div>
+                <h2>共<span class="tit_num"></span>件宝贝</h2>
+            </div>
+        </div>
+
+        <!-- 内容 -->
+        <div class="content">
+            <div class="inner">
+                <div class="item">
+                    <div class="item-top">
+                        <input type="checkbox" class="set-all">
+                        <div>
+                            <img src="../img/dianpu-000.png" alt="">
+                            <h2>SUPERTOFU</h2>
+                            <img src="../img/right-8d.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="cross-store">
+                        <div class="cro-left">
+                            <span>跨店减满</span>
+                            <p>每满200减20,可跨店</p>
+                        </div>
+                        <div class="cro-right">
+                            <span>凑单</span>
+                            <img src="../img/right-f40.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item-con-all"></div>
+
+                    <div class="cross-store store-activity">
+                        <div class="cro-left">
+                            <span>本店活动</span>
+                            <p>直降除外,部分商品满2件打9.50折</p>
+                        </div>
+                        <div class="cro-right">
+                            <span>凑单</span>
+                            <img src="../img/right-f40.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="settlement">
+            <div class="inner">
+                <div class="set-left">
+                    <input type="checkbox" class="sel-bot-all">
+                    <span>全选</span>
+                </div>
+                <div class="set-right">
+                    <p>合计:<span>￥</span><span class="all-price">0.00</span></p>
+                    <div>结算(<span class="count">0</span>)</div>
+                    <a href="javascript:;" class="del">删除</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert"></div>
+    </div>
+</body>
+</html>

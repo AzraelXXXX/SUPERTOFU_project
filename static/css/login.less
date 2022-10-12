@@ -1,0 +1,231 @@
+body {
+    background-color: #f0f0f0;
+    font-size: 16px;
+}
+
+.dn {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    // 登录页面头部
+    .top {
+        width: 100%;
+        background-color: #f7f7f8;
+        border-bottom: 1px solid #c8c8c8;
+        text-align: center;
+
+        h1 {
+            line-height: 45px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    // logo部分
+    .logo {
+        width: 100%;
+        line-height: 91px;
+        text-align: center;
+
+        img {
+            width: 135px;
+        }
+    }
+
+    // form手机号登录部分
+    .login-form {
+
+        .tel input,
+        .psw input {
+            flex: 1;
+            outline: none;
+            border: none;
+            font-size: 16px;
+            line-height: 50px;
+        }
+
+        i {
+            display: none;
+            width: 16px;
+            height: 16px;
+            background: url(../img/close.png) no-repeat 0 0 / 100%;
+            margin-right: 15px;
+        }
+
+        .tel {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #c8c8c8;
+
+            select {
+                padding: 0 14px 0 10px;
+                border: none;
+                background: url(../img/top-bottom.png) no-repeat 90px center / 24px;
+            }
+        }
+
+        .psw {
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #c8c8c8;
+
+            a {
+                color: #fd6020;
+                font-size: 16px;
+                line-height: 50px;
+            }
+
+            span {
+                width: 20px;
+                height: 22px;
+                background: url(../img/close_eye.png) no-repeat 0 0 / cover;
+            }
+        }
+
+        .switch {
+            display: flex;
+            padding: 0 10px;
+            margin: 15px 0 23px;
+
+            a {
+                margin: 0;
+                font-size: 16px;
+                color: #555;
+            }
+        }
+
+        .btn {
+            padding: 0 10px;
+
+            button {
+                width: 100%;
+                line-height: 45px;
+                background-color: #fd6020;
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+
+        .agreement {
+            margin-top: 30px;
+            display: flex;
+            text-align: center;
+
+            em {
+                display: block;
+                width: 15px;
+                height: 15px;
+                margin-left: 2px;
+                border: 2px solid #ccc;
+                border-radius: 50%;
+                transform: translateY(4px);
+            }
+
+            .em_bg {
+                border: none;
+                background: #ff5000 url(../img/checked.png) no-repeat 0 0 / cover;
+            }
+
+            p {
+                flex: 1;
+                color: #999;
+                font-size: 14px;
+
+                a {
+                    color: #fd6020;
+                }
+            }
+        }
+
+        .acnum {
+            padding-left: 15px;
+        }
+    }
+
+    .mask,
+    .mask1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, .7);
+
+        .warning {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            transform: translate(-50%, -50%);
+
+            .title {
+                padding: 20px;
+            }
+
+            .clo_btn {
+                padding: 10px;
+                color: #f40;
+                border-top: 1px solid #ddd;
+            }
+        }
+    }
+
+    .mask1 {
+        .warning {
+            width: 320px;
+            padding: 20px 16px;
+            border-radius: 20px;
+
+            .title {
+                padding: 0;
+            }
+
+            .con {
+                margin: 12px 0;
+                text-align: left;
+                font-size: 13px;
+                color: #999;
+
+                a {
+                    color: #111;
+                }
+            }
+
+            .mask_btn {
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    width: 138px;
+                    line-height: 40px;
+                    font-size: 16px;
+                    color: #ff5000;
+                    border: 1px solid #ff9000;
+                    background: none;
+                    border-radius: 21px;
+                }
+
+                button.yes {
+                    color: #fff;
+                    background-image: linear-gradient(90deg, #ff9000, #ff5000 98%);
+                }
+            }
+        }
+    }
+}
